@@ -8,19 +8,19 @@ This is a REST API written on JavaScript using async/await.
 
 ## Requirements Satisfied
 
-[X] Signup with a username and password.
+- [x] Signup with a username and password.
 
-[X] Log in with User Id and password.
+- [x] Log in with User Id and password.
 
-[X] A page for viewing all the stories titles, and clicking them should take to the story page.
+- [x] A page for viewing all the stories titles, and clicking them should take to the story page.
 
-[X] The story page should contain
+- [x] The story page should contain
 
 -   the following details
     -   Story title
     -   Story content
 
-[X] Number of people currently viewing this storyd) Total read count for the story
+- [x] Number of people currently viewing this storyd) Total read count for the story
 
 ## Features
 
@@ -51,7 +51,7 @@ This is a REST API written on JavaScript using async/await.
 ### Login credentials
 
 email: `admin@admin.com`
-password: `12345`
+password: `admin`
 
 ## How to install
 
@@ -64,20 +64,6 @@ npm update
 ```
 
 ## How to run
-
-\---- VERY IMPORTANT ---
-
-### Database cleaning and seeding samples
-
-There are 3 available commands for this: `fresh`, `clean` and `seed`.
-
-```bash
-npm run command
-```
-
--   `fresh` cleans and then seeds the database with dynamic data.
--   `clean` cleans the database.
--   `seed` seeds the database with dynamic data.
 
 ### Running in development mode (lifting API server)
 
@@ -175,6 +161,7 @@ It accepts the story content and title as parameters and returns a new story
 #### AUTHORIZED ROUTE
 
 Only the story owner can update a story
+
 `PATCH /stories/{{ID}}` updates a existing story in the database
 It accepts the story content and title as parameters and returns an updated story
 
@@ -190,4 +177,5 @@ It accepts the story content and title as parameters and returns an updated stor
 #### AUTHORIZED ROUTE
 
 Only the story owner can delete a story
+
 `DELETE stories/{{ID}}` deletes a existing story in the database
